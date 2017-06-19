@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/activity_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:background="#FFededed">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:useDefaultMargins="true"
+            android:layout_marginBottom="5dp"
+            android:alignmentMode="alignBounds"
+            android:columnOrderPreserved="false"
+            android:id="@+id/grid_layout"
+            android:columnCount="4">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_photo"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_account_circle_black_128dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:layout_rowSpan="4"/>
+
+            <TextView
+                android:id="@+id/total_posts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/total_followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="12dp"
+                android:text="0"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/total_following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="12dp"
+                android:text="0"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/total_posts_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="posts"
+                android:layout_marginRight="15dp"
+                android:paddingLeft="7dp"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/total_followers_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="followers"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/total_following_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="following"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_height="30dp"
+                android:layout_width="205dp"
+                android:text="@string/edit_your_profile"
+                android:layout_marginTop="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:textSize="12sp"
+                android:layout_columnSpan="3"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:padding="6dp"
+                android:onClick="selfDestruct"
+                android:background="@drawable/btn_follow"
+                android:textColor="@color/colorAccent"
+                android:elevation="2dp"/>
+
+            <Button
+                android:id="@+id/profile_btn_follow"
+                android:layout_height="30dp"
+                android:layout_width="205dp"
+                android:text="Follow"
+                android:layout_marginTop="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:textSize="12sp"
+                android:layout_columnSpan="3"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:padding="6dp"
+                android:onClick="follow_states"
+                android:background="@drawable/btn_follow"
+                android:textColor="@color/colorAccent"
+                android:visibility="gone"
+                android:elevation="2dp"/>
+
+        </GridLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@id/grid_layout"
+            android:background="@drawable/border_bottom_1dp"/>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/line">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/sliding_tabs_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom_1dp"
+                app:tabMode="fixed" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:id="@+id/profile_content"
+                android:layout_below="@id/sliding_tabs_profile"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_profile"
+                android:layout_below="@id/sliding_tabs_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

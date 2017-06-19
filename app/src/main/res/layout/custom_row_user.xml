@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pp_follow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_account_circle_black_128dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="75dp"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_height="30dp"
+        android:layout_width="100dp"
+        android:text="Follow"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:padding="6dp"
+        android:onClick="follow_states"
+        android:background="@drawable/btn_follow"
+        android:textColor="@color/colorAccent"
+        android:elevation="2dp"/>
+
+</RelativeLayout>

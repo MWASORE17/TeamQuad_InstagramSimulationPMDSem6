@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_marginRight="5dp"
+    android:layout_height="215dp"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="@dimen/activity_vertical_margin"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/pp_team"
+            android:layout_width="200dp"
+            android:layout_height="215dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-29dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/photo"/>
+
+        <TextView
+            android:id="@+id/nama_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/pp_team"
+            android:textSize="28sp"
+            android:layout_marginTop="35dp"
+            android:text="Nama"/>
+
+        <TextView
+            android:id="@+id/email_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nama_team"
+            android:layout_toRightOf="@+id/pp_team"
+            android:layout_marginTop="10dp"
+            android:textSize="13sp"
+            android:text="Email"/>
+
+        <TextView
+            android:id="@+id/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_team"
+            android:layout_toRightOf="@+id/pp_team"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/border_bottom_bg_white_1dp"/>
+
+        <TextView
+            android:id="@+id/job"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/border"
+            android:layout_toRightOf="@+id/pp_team"
+            android:textAlignment="textEnd"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="13sp"
+            android:text="Job"
+            android:textStyle="italic"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

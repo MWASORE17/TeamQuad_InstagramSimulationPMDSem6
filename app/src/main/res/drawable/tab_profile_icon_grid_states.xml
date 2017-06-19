@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/grid_on_grey_24x24"
+        android:state_selected="false"/>
+    <item
+        android:drawable="@drawable/ic_grid_on_black_24dp"
+        android:state_selected="true"/>
+</selector>

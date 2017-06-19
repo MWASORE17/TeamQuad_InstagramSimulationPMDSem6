@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_icon"
+            android:layout_marginTop="10dp"
+            android:tint="#90a4ae"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_add_circle_outline_black_128dp"/>
+
+        <TextView
+            android:id="@+id/profile_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:text="@string/profile_title"
+            android:textColor="#37474f"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/profile_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:text="@string/profile_info"
+            android:textColor="#37474f"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/profile_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#579ded"
+            android:textSize="14sp"
+            android:text="@string/profile_link"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</FrameLayout>

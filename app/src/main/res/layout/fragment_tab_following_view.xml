@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_following_icon"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:tint="#90a4ae"
+            android:src="@drawable/ic_person_add_black_128dp"/>
+
+        <TextView
+            android:id="@+id/tab_following_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:text="@string/tab_following_title"
+            android:textColor="#37474f"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tab_following_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:text="@string/tab_following_info"
+            android:textColor="#37474f"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tab_following_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#579ded"
+            android:textSize="14sp"
+            android:text="@string/tab_following_link"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</FrameLayout>

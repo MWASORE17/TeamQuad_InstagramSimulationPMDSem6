@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="#263238"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#263238"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/ic_camera"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:tint="@android:color/white"
+                android:background="@drawable/btn_capture_options"
+                android:src="@drawable/ic_camera_black_24dp" />
+
+            <TextView
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="Camera"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/ic_gallery"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:tint="@android:color/white"
+                android:background="@drawable/btn_capture_options"
+                android:src="@drawable/ic_collections_black_24dp" />
+
+            <TextView
+                android:id="@+id/gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:text="Gallery"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
